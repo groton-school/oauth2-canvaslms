@@ -1,6 +1,6 @@
 <?php
 
-namespace GrootnSchool\OAuth2\Client\Provider;
+namespace GrotonSchool\OAuth2\Client\Provider;
 
 use GrotonSchool\OAuth2\Client\Provider\CanvasLMSResourceOwner;
 use League\OAuth2\Client\Provider\AbstractProvider;
