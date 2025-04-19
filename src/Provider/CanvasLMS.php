@@ -1,20 +1,20 @@
 <?php
 
-namespace smtech\OAuth2\Client\Provider;
+namespace GrootnSchool\OAuth2\Client\Provider;
 
+use GrotonSchool\OAuth2\Client\Provider\CanvasLMSResourceOwner;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\ArrayAccessorTrait;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
-use smtech\OAuth2\Client\Provider\CanvasLMSResourceOwner;
 
 class CanvasLMS extends AbstractProvider
 {
+    use ArrayAccessorTrait;
 
-    use ArrayAccessorTrait,
-        BearerAuthorizationTrait;
+    use BearerAuthorizationTrait;
 
     /**
      * URL of Canvas Instance (e.g. https://canvas.instructure.com)

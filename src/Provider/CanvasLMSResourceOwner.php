@@ -1,13 +1,11 @@
 <?php
 
-namespace smtech\OAuth2\Client\Provider;
+namespace GrotonSchool\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
-use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 
 class CanvasLMSResourceOwner implements ResourceOwnerInterface
 {
-
     protected $response;
 
     public function __construct(array $response = [])
