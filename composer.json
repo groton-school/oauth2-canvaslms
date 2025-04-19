@@ -19,6 +19,10 @@
     "autoload": {
         "psr-4": {
             "smtech\\OAuth2\\Client\\": "src"
-        }
     }
+  },
+  "require-dev": {
+    "marcocesarato/php-conventional-changelog": "^1.17",
+    "friendsofphp/php-cs-fixer": "^3.75"
+  }
 }
