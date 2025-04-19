@@ -1,6 +1,6 @@
 # Canvas LMS Provider for OAuth 2.0 Client
 
-[![Latest Version](https://img.shields.io/packagist/v/smtech/oauth2-canvaslms.svg)](https://packagist.org/packages/smtech/oauth2-canvaslms)
+[![Latest Version](https://img.shields.io/packagist/v/groton-school/oauth2-canvaslms.svg)](https://packagist.org/packages/groton-school/oauth2-canvaslms)
 
 This package provides Canvas LMS OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
@@ -10,7 +10,7 @@ In your `composer.json`, include:
 
 ```JSON
 "require": {
-    "smtech/oauth2-canvaslms": "~1.0"
+    "groton-school/oauth2-canvaslms": "~1.0"
 }
 ```
 
@@ -27,7 +27,7 @@ Per the [Canvas OAUth docs](https://canvas.instructure.com/doc/api/file.oauth.ht
 A small example:
 
 ```PHP
-use smtech\OAuth2\Client\Provider\CanvasLMS;
+use GrotonSchool\OAuth2\Client\Provider\CanvasLMS;
 
 session_start();
 
