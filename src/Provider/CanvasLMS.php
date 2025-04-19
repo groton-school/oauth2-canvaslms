@@ -85,9 +85,6 @@ class CanvasLMS extends AbstractProvider
 
     protected function getScopeSeparator()
     {
-        if (!isset($this->scopeSeparator)) {
-            $this->scopeSeparator = ' ';
-        }
-        return $this->scopeSeparator;
+        return ' ';
     }
 }
