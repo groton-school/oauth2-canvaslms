@@ -76,13 +76,6 @@ class CanvasLMS extends AbstractProvider
         return new CanvasLMSResourceOwner($response);
     }
 
-    public function getAccessTokenRequest(array $params)
-    {
-        $request = parent::getAccessTokenRequest($params);
-        $uri = $request->getUri()->withUserInfo($this->clientId, $this->clientSecret);
-        return $request->withUri($uri);
-    }
-
     protected function getScopeSeparator()
     {
         return ' ';
